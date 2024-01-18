@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <title>Data Form</title>
+
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Bootstrap demo</title>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <style>
+            
+        </style>
+
+        <link rel="stylesheet" href="Styles.CSS">
+
+
+    </head>
+
+    <body>
+
+        <script src="./script.JS">
+
+        </script>
+
+        
+            
+        
+        <fieldset id="fieldset1">
+            <h2>Please fill in the form with the following information.</h2>
+            
+            <form>
+                <lable for="fname" >First Name</lable><br>
+                <input type="text" id="fname" name="First Name">
+            <br>
+
+            <label for="sname">Second Name</label><br>
+            <input type="text" id="sname" name="Second Name">
+            <br>
+    
+            
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="Last Name">
+            <br>
+    
+            
+                <lable for="DOB">Date of Birth</lable><br>
+                <input type="date" id="DOB" name="Date of Birth">
+            <br>
+    
+            
+                <label for="idnumber">ID Number</label><br>
+                <input type="text" id="idnumber" name="ID Number">
+            <br>
+    
+            
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="Email Address">
+            <br>
+    
+            
+                <lable for="number">Contact Number</lable><br>
+                <input type="tel" id="number" name="Contact Number">
+            <br>
+    
+            
+                <form action="index.html">
+                <lable for="adress">Physical Address</lable><br>
+                <textarea id="address" name="address" rows="4" cols="50"></textarea> 
+            <br>
+        </fieldset><br>
+
+        
+
+         <fieldset id="fieldset2">
+            <legend>Please select your gender</legend><br>
+            
+            <table id="table1">
+                <tr>
+                <td><input type="radio" name="gender" value="Female" onclick="Answer1(this.value)"> </td>   
+                <td><label for="Female">Female</label><br></td>
+                </tr>
+
+                <tr>
+                    <td><input type="radio"name="gender" value="Male" onclick="Answer1(this.value)"></td>
+                    <td><label for="Male">Male</label><br></td>
+                </tr>
+
+                <tr>
+                    <td><input type="radio" name="gender" value="Non Specific" onclick="Answer1(this.value)"></td>
+                    <td><label for="Non Specific">Non Specific</label></td>
+                </tr>
+            </table>    
+         </fieldset>
+            
+
+
+        <br>
+
+            <fieldset id="fieldset3">
+                <legend>Please select your race</legend><br>
+
+                <table id="table2">
+                    <tr>
+                        <td><input type="radio" id="race" name="race" value="Caucasian" onclick="Answer2(this.value)"></td>
+                        <td> <label for="Caucasian">Caucasian</label><br></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" id="race" name="race" value="African" onclick="Answer2(this.value)"></td>
+                        <td><label for="African">African</label><br></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" id="race" name="race" value="Coloured" onclick="Answer2(this.value)"></td>
+                        <td><label for="Coloured">Coloured</label><br></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" id="race" name="race" value="Indian" onclick="Answer2(this.value)"></td>
+                        <td><label for="Indian">Indian</label><br></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" id="race" name="race" value="Asian" onclick="Answer2(this.value)"></td>
+                        <td><label for="Asian">Asian</label><br></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" id="race" name="race" value="Hispanic" onclick="Answer2(this.value)"></td>
+                        <td><label for="Hispanic">Hispanic</label><br></td>
+                    </tr>
+
+                </table>
+            </fieldset>
+        
+            
+        <br>
+
+            <fieldset id="fieldset4">
+                <legend>Please select your citizenship status</legend><br>
+
+                <table id="table3">
+                    <tr>
+                        <td><input type="radio" id="citizenship" name="citizenship" value="SA Citizen" onclick="Answer3(this.value)"></td>
+                        <td><label for="SA Citizen">SA Citizen</label><br></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" id="citizenship" name="citizenship" value="Other" onclick="Answer3(this.value)"></td>
+                        <td><label for="Other">Other</label><br></td>
+                    </tr>
+                </table>
+
+                <label for="citizenship">If you selected other, please specify</label><br>
+                <input type="text" id="citizenship" name="citizenship">
+
+            </fieldset>
+
+
+
+        <br>
+
+            <fieldset id="fieldset5">
+
+                <legend>Please select the institute at which you studied</legend><br>
+
+                <lable for="institute"></lable>
+    
+                <select name="institute" id="institute">
+                    <option value="">-Please Select-</option>
+                    <option value="University of Kwa-Zulu Natal">University of Kwa-Zulu Natal</option>
+                    <option value="University of Cape Town">University of Cape Town</option>
+                    <option value="University of Johannesburg">University of Johannesburg</option>
+                    <option value="University of Pretoria">University of Pretoria</option>
+                    <option value="University of Witwatersrand">University of Witwatersrand</option>
+                    <option value="University of South Africa (UNISA)">University of South Africa (UNISA)</option>
+                    <option value="University of Zululand">University of Zululand</option>
+                    <option value="Stellenbosch University">Stellenbosch University</option>
+                    <option value="Varsity College">Varsity College</option>
+                </select>
+    
+    
+         
+            
+        <br>
+
+        
+            <p>Please select the qualification you have achieved</p>
+
+            <lable for="qualification"></lable>
+
+            <select name="qualification" id="qualification">
+                
+                <option value="">-Please Select-</option>
+                <option value="Bcom Law">Bcom Law</option>
+                <option value="Bcom Accounting">Bcom Accounting</option>
+                <option value="Bcom Marketing Management">Bcom Marketing Management</option>
+                <option value="LLB">LLB</option>
+                <option value="Bachelor of Nursing">Bachelor of Nursing</option>
+                <option value="Bcom Business Management">Bcom Business Management</option>
+
+            </select>
+        
+            
+            
+            
+            
+        <br>
+
+        
+            <p>Please indicate which year you completed your studies</p>
+
+            <lable for="year"></lable>
+
+            <select name="year" id="year">
+
+                <option value="">-Please Select-</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+
+            </select>
+            </fieldset>
+        <br>
+
+            <fieldset id="fieldset6">
+            
+
+            <legend>Please indicate whcih province you would prefer to find work in, you can select up to three choices</legend></p>
+
+        <table id="table4">
+            <tr>
+                <td><input type="checkbox" id="province1" name="province1" name="Eastern Cape" value="Eastern Cape" onclick="Answer4(this.value)"></td>
+                <td><label for="Eastern Cape">Eastern Cape</label><br></td> 
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="province2" name="province2" name="Free State" value="Free State" onclick="Answer4(this.value)"></td>
+                <td><label for="Free State">Free State</label><br></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="province3" name="province3" name="Gauteng" value="Gauteng" onclick="Answer4(this.value)"></td>
+                <td><label for="Gauteng">Gauteng</label><br></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="province4" name="province4" name="Kwa-Zulu Natal" value="Kwa-Zulu Natal" onclick="Answer4(this.value)"></td>
+                <td><label for="Kwa-Zulu Natal">Kwa-Zulu Natal</label><br></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="province5" name="province5" name="Limpopo" value="Limpopo" onclick="Answer4(this.value)"></td>
+                <td><label for="Limpopo">Limpopo</label><br></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="province6" name="Mpumalanga" value="Mpumalanga" onclick="Answer4(this.value)"></td>
+                <td><label for="Mpumalanga">Mpumalanga</label><br></r></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="province7" name="province7" name="North West" value="North West" onclick="Answer4(this.value)"></td>
+                <td><label for="North West">North West</label><br></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="province8" name="province8" name="Northern Cape" value="Northern Cape" onclick="Answer4(this.value)"></td>
+                <td><label for="Northern Cape">Northern Cape</label><br></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="province9" name="province9" name="Western Cape" value="Western Cape" onclick="Answer4(this.value)"></td>
+                <td><label for="Western Cape">Western Cape</label><br></td>
+            </tr>
+        </table>
+        </fieldset>
+
+        </form>
+
+        <h2>Thank you for taking time to fill in this form!</h2>
+
+        <button id="button" onclick="Submit()">Submit</button>
+
+            
+
+        
+
+        
+
+    </body>
+</html>

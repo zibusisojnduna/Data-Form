@@ -1,0 +1,153 @@
+body{
+    background-color: rebeccapurple;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;}
+
+
+#fieldset1{
+    display: block;
+    width: 35%;
+    position: relative;
+    margin: auto;
+    background-color:darkblue;
+    border-radius: 20px;
+}
+
+#fieldset2{
+    background-color: darkcyan;
+    width: 35%;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#fieldset3{
+    background-color:darkmagenta;
+    width: 35%;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+    
+}
+
+#fieldset4{
+    background-color:darkred;
+    width: 35%;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+    height: 200px;
+    
+}
+
+#fieldset5{
+    background-color:darkturquoise;
+    width: 35%;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+
+    
+}
+
+#fieldset6{
+    background-color:darkseagreen;
+    width: 35%;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#table1{
+text-align: justify;
+margin: auto;
+}
+
+#table2{
+    text-align: justify;
+    margin: auto; 
+}
+
+#table3{
+    text-align: justify;
+    margin: auto; 
+}
+
+#table4{
+    text-align: justify;
+    margin: auto; 
+}
+
+#fname{
+    border-radius: 20px;
+}
+
+#lname{
+    border-radius: 20px;
+}
+
+#DOB{
+    border-radius: 20px;
+    width: 32%;
+}
+
+#idnumber{
+    border-radius: 20px;
+}
+
+#email{
+    border-radius: 20px;
+}
+
+#number{
+    border-radius: 20px;
+}
+
+#address{
+    border-radius: 20px;
+}
+
+#citizenship{
+    border-radius: 20px;
+}
+
+#institute{
+    border-radius: 20px;
+}
+
+#qualification{
+    border-radius: 20px;
+}
+
+#year{
+    border-radius: 20px;
+}
+
+#sname{
+    border-radius: 20px;
+}
+
+#button{
+    background-color: darkslategrey;
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+    color: white;
+    transition-duration: 1s;
+}
+
+#button:hover{
+    background-color: orange;
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+    color: black;
+    cursor: pointer;
+   
+}
