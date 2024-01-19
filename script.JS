@@ -56,7 +56,19 @@ function Submit(){
     console.log(student1)
 
     
+    const url ="https://formspree.io/f/xleqdygj"
+    // const url ="https://formspree.io/f/mdoqkynl"
 
+    let send =JSON.stringify(student1)
+
+    fetch(url,{
+        method: "POST",
+        body: send,
+        headers:{
+            "Content-Type":"application/json"
+        }
+    })
+.catch(function(e){console.log(e)})
     
    
 
